@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    background-image: url('./Images/wedding-g30a9eed34_1920.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.main::after{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.379);
+}
+.tex{
+    z-index: 7;
+    color: white;
+    position: absolute;
+}
+
+.info{
+    background-image: url('./Images/woman-g3b90ef390_1920.jpg');
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.info::after{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.626);
+}
+#about h1{
+    font-weight: 200;
+}
+#about p{
+    font-weight: 100;
+}
+.circle{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-size: 4rem;
+    margin-top: 6rem;
+}
+.circle1{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-size: 4rem;
+    margin-top: 6rem;
+}
+.circle2{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-size: 4rem;
+    margin-top: 6rem;
+}
+
+.box{
+    background-color: rgba(255, 68, 0, 0.666);
+    border-radius: 2rem;
+    padding: 0.5rem 0.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.box1{
+    background-color: rgba(255, 68, 0, 0.666);
+    border-radius: 2rem;
+    padding: 0.5rem 0.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.box2{
+    background-color: rgba(255, 68, 0, 0.666);
+    border-radius: 2rem;
+    padding: 0.5rem 0.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+#product h2{
+    font-weight: 100;
+}
+#product .card{
+    position: relative;
+
+}
+#product .img{
+    /* opacity: 1; */
+    transition: .5s ease;
+}
+
+.card .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card img:hover{
+  opacity: 0.3;
+  background-color: orange;
+}
+
+.card:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+}
+/* #price{
+    background-color: rgba(0, 191, 255, 0.321);
+} */
+#price h2{
+    font-weight: 100;
+}
+
+#price .mid{
+    background-color: rgba(255, 0, 0, 0.681);
+}
+
+#price .btn1{
+    background-color: transparent;
+    border-color: rgba(255, 0, 0, 0.681);
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+}
+
+#price .btn2{
+    background-color: transparent;
+    border-color: white;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .right{
+        display: none;
+    }
+    .circle1{
+        display: none;
+    }
+    .circle2{
+        display: none;
+    }
+    .form{
+		display: none;
+	}
+}
